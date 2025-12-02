@@ -23,7 +23,10 @@ fn try_main() -> AnyhowResult<()> {
         1 => day_one::day_one(&args.input, args.part)?,
         _ => bail!("Please use a valid day"),
     };
-    println!("The answer to day {}, input {}, is: \n\t {result}", args.day, args.input);
+    println!(
+        "The answer to day {}, input {}, is: \n\t {result}",
+        args.day, args.input
+    );
     Ok(())
 }
 
