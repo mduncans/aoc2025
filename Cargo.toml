@@ -7,8 +7,9 @@ edition = "2024"
 members = ["days/*"]
 
 [dependencies]
-day-one = { path = "days/day-one" }
 utils = {path = "days/utils" }
+day-one = { path = "days/day-one" }
+day-two = { path = "days/day-two" }
 
 anyhow = { workspace = true }
 fs-err = { workspace = true }

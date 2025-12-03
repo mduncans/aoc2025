@@ -21,6 +21,7 @@ fn try_main() -> AnyhowResult<()> {
     let args = Args::parse();
     let result = match args.day {
         1 => day_one::day_one(&args.input, args.part)?,
+        2 => day_two::day_two(&args.input, args.part)?,
         _ => bail!("Please use a valid day"),
     };
     println!(
